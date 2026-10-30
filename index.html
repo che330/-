@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的待办清单</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 我的待办清单</h1>
+            <p class="subtitle">简单好用的任务管理工具</p>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="要做点什么呢？" maxlength="100">
+            <button id="add-btn">添加任务</button>
+        </div>
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">全部</button>
+            <button class="filter-btn" data-filter="active">未完成</button>
+            <button class="filter-btn" data-filter="completed">已完成</button>
+        </div>
+
+        <ul id="todo-list" class="todo-list"></ul>
+
+        <div class="stats-section">
+            <span id="stats-text">共 0 项任务，0 项已完成</span>
+            <button id="clear-completed-btn">清除已完成</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
